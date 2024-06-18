@@ -1,0 +1,26 @@
+.Header {
+  height: 15vh;
+  background-color: white;
+}
+
+.Header-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  height: 15vh;
+  background-color: var(--bg-secondary);
+  padding: 1rem var(--padding-primary-x);
+}
+
+.Header-Logo,
+.Header-Links {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.Header-Links {
+  gap: var(--padding-primary-x);
+
+  justify-content: end;
+}
