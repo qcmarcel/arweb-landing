@@ -1,5 +1,5 @@
 .Header {
-  height: 15vh;
+  height: 12vh;
   background-color: white;
 }
 
@@ -7,20 +7,95 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 
-  height: 15vh;
+  height: 12vh;
   background-color: var(--bg-secondary);
   padding: 1rem var(--padding-primary-x);
 }
 
 .Header-Logo,
-.Header-Links {
+.Header-Links .Header-Links-Mobile {
   display: flex;
   align-items: center;
   justify-content: start;
 }
 
-.Header-Links {
-  gap: var(--padding-primary-x);
+.Header-Links .Header-Links-Mobile {
+  gap: 4rem;
 
   justify-content: end;
+}
+.Header-Links-Mobile-Btn {
+  display: none;
+}
+
+.Header-Links .Header-Links-Mobile {
+  width: 100%;
+  height: 100%;
+}
+
+.Header-Links .Header-Links-Mobile a {
+  text-decoration: none;
+  color: var(--text-color-primary);
+}
+
+@media screen and (max-width: 1240px) {
+  .Header-container {
+    padding: 0.5rem var(--padding-primary-x);
+  }
+}
+
+@media screen and (max-width: 841px) {
+  .Header-Links .Header-Links-Mobile {
+    gap: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .Header-container {
+    padding: 0.5rem 3.5rem;
+  }
+  .Header-Links .Header-Links-Mobile {
+    gap: 2rem;
+    font-size: 0.8rem;
+  }
+  .Header-Logo svg {
+    width: 110px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .Header-Logo {
+    justify-content: end;
+  }
+  .Header-container {
+    grid-template-columns: 1.8fr 1fr;
+  }
+  .Header-Links {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .Header-Links .Header-Links-Mobile-Btn {
+    cursor: pointer;
+    margin-top: 4px;
+    outline: none;
+    border: none;
+    display: flex;
+    background-color: transparent;
+    color: var(--text-color-primary);
+  }
+  .Header-Links .Header-Links-Mobile-Btn:hover {
+    background-color: color-mix(
+      in srgb,
+      var(--bg-quaternary),
+      rgb(200, 200, 200)
+    );
+    padding: -4px;
+    border-radius: var(--radius-primary);
+  }
+  .Header-Links .Header-Links-Mobile {
+    display: none;
+  }
 }

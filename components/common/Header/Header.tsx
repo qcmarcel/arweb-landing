@@ -2,6 +2,7 @@
 import Image from "next/image";
 import "./Header.css";
 import { Logo } from "../Logo";
+import HamburgerIcon from "@/components/icons/Hamburger";
 
 function Header() {
   return (
@@ -11,9 +12,14 @@ function Header() {
           <Logo text />
         </div>
         <div className="Header-Links">
-          <a href="#about">Nosotros</a>
-          <a href="#pricing">Planes</a>
-          <a href="#contact">Contacto</a>
+          <button className="Header-Links-Mobile-Btn">
+            <HamburgerIcon />
+          </button>
+          <div className="Header-Links-Mobile">
+            <a href="#about">Nosotros</a>
+            <a href="#pricing">Planes</a>
+            <a href="#contact">Contacto</a>
+          </div>
         </div>
       </div>
     </header>

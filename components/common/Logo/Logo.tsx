@@ -1,22 +1,23 @@
-import "./Logo.css";
-import React from "react";
+
 
 interface Props {
+  width?: number;
+  height?: number;
   text: boolean;
   monochrome?: boolean;
 }
 
-function Logo({ text, monochrome }: Props) {
+function Logo({ text, monochrome, width = 120, height = 50 }: Props) {
   let fill1 = monochrome ? "#fff" : "#0C1C47";
   let fill2 = monochrome ? "#fff" : "#00A8E1";
   //when you have the logo loose add the function to switch between logo with and without text
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={text ? "185" : "50"}
-      height="50"
+      width={text ? width : "50"}
+      height={height}
       fill="none"
-      viewBox={text ? "0 0 185 50" : "0 0 50 50"}
+      viewBox={text ? `0 0 185 50` : "0 0 50 50"}
     >
       <path
         fill={fill1}
