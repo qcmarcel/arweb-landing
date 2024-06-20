@@ -9,7 +9,9 @@ function Header() {
     <header className="Header">
       <div className="Header-container">
         <div className="Header-Logo">
-          <Logo text />
+          <a href="/">
+            <Logo text />
+          </a>
         </div>
         <div className="Header-Links">
           <button className="Header-Links-Mobile-Btn">

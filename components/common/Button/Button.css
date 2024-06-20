@@ -1,0 +1,33 @@
+.Button {
+  outline: none;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  text-decoration: none;
+  border-radius: var(--radius-primary);
+}
+
+.Button.Button-solid {
+  background-color: var(--color-tertiary);
+  border: 2px solid var(--color-tertiary);
+  color: white;
+}
+
+.Button.Button-solid:hover {
+  background-color: color-mix(
+    in srgb,
+    var(--color-tertiary),
+    rgb(200, 200, 200)
+  );
+  border-color: color-mix(in srgb, var(--color-tertiary), rgb(200, 200, 200));
+}
+
+.Button.Button-outline {
+  background-color: transparent;
+  border: 2px solid var(--color-primary-dark);
+  color: var(--color-primary-dark);
+}
+
+.Button.Button-outline:hover {
+  background-color: var(--color-primary-dark);
+  color: var(--text-color-secondary);
+}

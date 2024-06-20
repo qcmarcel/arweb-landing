@@ -16,6 +16,10 @@ a {
   font-style: var(--text-color-primary);
 }
 
+body {
+  background-color: var(--bg-secondary);
+}
+
 :root {
   --color-primary: rgb(12, 28, 71);
   --color-secondary: rgb(114, 81, 188);
@@ -29,8 +33,8 @@ a {
   --bg-tertiary: var(--color-primary-dark);
   --bg-quaternary: var(--color-tertiary-white);
 
-  --padding-primary-x: 9.375rem;
-  --padding-primary-y: 9.375rem;
+  --padding-primary-x: 6rem;
+  --padding-primary-y: 6rem;
 
   --title-color-primary: rgb(3, 6, 28);
   --title-color-secondary: rgb(255, 255, 255);
