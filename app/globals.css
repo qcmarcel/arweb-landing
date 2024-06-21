@@ -28,13 +28,13 @@ body {
   --color-primary-dark: rgb(3, 6, 28);
   --color-tertiary-white: rgb(191, 209, 229);
 
+  --color-mix-hover-primary: rgb(200, 200, 200);
+  --color-mix-bg-menu-primary: rgba(255, 255, 255, 0.75);
+
   --bg-primary: rgb(255, 255, 255);
   --bg-secondary: rgb(223, 229, 230);
   --bg-tertiary: var(--color-primary-dark);
   --bg-quaternary: var(--color-tertiary-white);
-
-  --padding-primary-x: 6rem;
-  --padding-primary-y: 6rem;
 
   --title-color-primary: rgb(3, 6, 28);
   --title-color-secondary: rgb(255, 255, 255);
@@ -43,10 +43,15 @@ body {
   --text-color-secondary: rgb(255, 255, 255);
   --text-color-tertiary: rgb(0, 168, 225);
 
-  --radius-primary: 6px;
-
   --box-shadow-primary: 0 -4px 4px rgba(0, 0, 0, 0.51);
   --drop-shadow-primary: 0 0 4px 0 rgba(0, 0, 0, 0.51);
+
+  --padding-primary-x: 6rem;
+  --padding-primary-y: 6rem;
+
+  --radius-primary: 6px;
+
+  --blur-primary: 4px;
 }
 
 @media screen and (color-scheme: dark) {
