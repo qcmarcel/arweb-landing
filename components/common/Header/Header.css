@@ -8,17 +8,10 @@
   position: fixed;
   display: grid;
   grid-template-columns: 1fr 1fr;
-<<<<<<< HEAD
-  height: 8.6875rem;
-  flex-shrink: 0;
-  background-color: var(--Color-NB);
-  padding: 0.99rem 5.56rem 0.8rem
-=======
   width: 100vw;
   height: 12vh;
   background-color: var(--bg-secondary);
   padding: 0.8rem var(--padding-primary-x) 0.8rem
->>>>>>> b2834b43cb0ff262c9c1456f215e0fa407a51a01
     calc(var(--padding-primary-x) - 5px);
 }
 
@@ -29,15 +22,10 @@
   justify-content: start;
 }
 
-<<<<<<< HEAD
-.Header-Links-Mobile-Btn {
-  display: none;
-=======
 .Header-Links .Header-Links-Mobile {
   gap: 4rem;
 
   justify-content: end;
->>>>>>> b2834b43cb0ff262c9c1456f215e0fa407a51a01
 }
 
 .Header-Links .Header-Links-Mobile {

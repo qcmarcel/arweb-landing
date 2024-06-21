@@ -3,13 +3,9 @@ import "./Header.css";
 import Image from "next/image";
 import { Logo } from "../Logo";
 import { HamburgerIcon } from "@/components/icons";
-<<<<<<< HEAD
-
-=======
 import { useState, useEffect } from "react";
 
 type MouseEventHandler<T> = React.MouseEventHandler<T>;
->>>>>>> b2834b43cb0ff262c9c1456f215e0fa407a51a01
 
 function Header() {
   const [mobileMenuState, setMobileMenuState] = useState<
