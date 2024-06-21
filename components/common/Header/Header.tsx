@@ -1,8 +1,8 @@
 "use client";
-import Image from "next/image";
 import "./Header.css";
 import { Logo } from "../Logo";
-import HamburgerIcon from "@/components/icons/Hamburger";
+import { HamburgerIcon } from "@/components/icons";
+
 
 function Header() {
   return (

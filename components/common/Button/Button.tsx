@@ -1,11 +1,11 @@
 import "./Button.css";
-interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  buttonType: "solid" | "outline";
-  children: React.ReactNode;
-  className?: string;
-  href?: string;
-  target?: "_self" | "_blank" | "_parent" | "_top" | undefined;
-  rel?: string | undefined;
+interface Props extends Readonly<React.ButtonHTMLAttributes<HTMLButtonElement>> {
+  readonly buttonType: "solid" | "outline" | "link" | "icon";
+  readonly children: React.ReactNode;
+  readonly className?: string;
+  readonly href?: string;
+  readonly target?: "_self" | "_blank" | "_parent" | "_top";
+  readonly rel?: string;
 }
 
 function Button({

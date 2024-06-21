@@ -1,6 +1,6 @@
 import type { SVGProps } from "react";
 
-export function HamburgerIcon(props: SVGProps<SVGSVGElement>) {
+export function HamburgerIcon(props: Readonly<SVGProps<SVGSVGElement>>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

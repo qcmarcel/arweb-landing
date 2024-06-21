@@ -3,8 +3,10 @@ import { Lexend } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/common/Header";
 import { HeroSection } from "@/components/sections/Hero";
+import ServicesSection from "@/components/sections/Services/Services";
 
 const lexend = Lexend({ subsets: ["latin"] });
+
 
 export const metadata: Metadata = {
   title: "Ar Web Studio - Somos todo en la web",
@@ -19,10 +21,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={lexend.className}>
+        <Header />
         <main>
-          <Header />
-          <HeroSection />
-          {children}
+          <div>
+            <HeroSection />
+            <ServicesSection />
+            {children}
+          </div>
         </main>
       </body>
     </html>

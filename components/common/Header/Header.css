@@ -1,15 +1,15 @@
 .Header {
-  height: 12vh;
+  height: 8.6875rem;
   background-color: white;
 }
 
 .Header-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
-  height: 12vh;
-  background-color: var(--bg-secondary);
-  padding: 0.8rem var(--padding-primary-x) 0.8rem
+  height: 8.6875rem;
+  flex-shrink: 0;
+  background-color: var(--Color-NB);
+  padding: 0.99rem 5.56rem 0.8rem
     calc(var(--padding-primary-x) - 5px);
 }
 
@@ -20,23 +20,26 @@
   justify-content: start;
 }
 
-.Header-Links .Header-Links-Mobile {
-  gap: 4rem;
-
-  justify-content: end;
-}
 .Header-Links-Mobile-Btn {
   display: none;
 }
 
 .Header-Links .Header-Links-Mobile {
+  justify-content: end;
   width: 100%;
   height: 100%;
+  gap: 4.8rem;
 }
 
 .Header-Links .Header-Links-Mobile a {
   text-decoration: none;
-  color: var(--text-color-primary);
+  color: var(--text-color-N);
+  font-size: 1.1875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.48381rem;
+  height: 1.185rem;
+  flex-shrink: 0;
 }
 
 @media screen and (max-width: 1240px) {

@@ -1,14 +1,18 @@
 .Button {
   outline: none;
   border: none;
-  padding: 0.6rem 1.4rem;
+  display: flex;
+  width: 11.25rem;
+  height: 3.5rem;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   border-radius: var(--radius-primary);
 }
 
 .Button.Button-solid {
   background-color: var(--color-tertiary);
-  border: 2px solid var(--color-tertiary);
+  border: 0.06rem solid var(--color-tertiary);
   color: white;
 }
 
@@ -23,11 +27,24 @@
 
 .Button.Button-outline {
   background-color: transparent;
-  border: 2px solid var(--color-primary-dark);
+  border: 0.06rem solid var(--color-primary-dark);
   color: var(--color-primary-dark);
 }
 
 .Button.Button-outline:hover {
+  background-color: var(--color-primary-dark);
+  color: var(--text-color-secondary);
+}
+
+.Button.Button-icon {
+  background-color: var(--color-tertiary);
+  border-radius: 100rem;
+  width:  3.19rem;
+  height: 3.19rem;
+  color: var(--color-primary-dark);
+}
+
+.Button.Button-icon:hover {
   background-color: var(--color-primary-dark);
   color: var(--text-color-secondary);
 }

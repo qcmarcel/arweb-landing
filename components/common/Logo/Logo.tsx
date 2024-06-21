@@ -7,14 +7,14 @@ interface Props {
   monochrome?: boolean;
 }
 
-function Logo({ text, monochrome, width = 120, height = 50 }: Props) {
+function Logo({ text, monochrome, width = 200, height = 55 }: Props) {
   let fill1 = monochrome ? "#fff" : "#0C1C47";
   let fill2 = monochrome ? "#fff" : "#00A8E1";
   //when you have the logo loose add the function to switch between logo with and without text
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={text ? width : "50"}
+      width={text ? width : width}
       height={height}
       fill="none"
       viewBox={text ? `0 0 185 50` : "0 0 50 50"}

@@ -1,22 +1,25 @@
 import Image from "next/image";
 import { Button } from "@/components/common/Button";
 import "./Hero.css";
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
 
 function HeroSection() {
   return (
     <section className="Hero">
       <div className="Hero-content">
         <h1>Te ayudamos a crecer y potenciar el éxito de tu negocio</h1>
-        <p>
+        <p className={inter.className}>
           Ofrecemos soluciones completas para llevar tu negocio al siguiente
           nivel
         </p>
         <div>
           <Button buttonType="solid" href="#">
-            Conoce más
+            <span>Conoce más</span>
           </Button>
           <Button buttonType="outline" href="#">
-            Solicita tu demo
+            <span>Solicita tu demo</span>
           </Button>
         </div>
       </div>
