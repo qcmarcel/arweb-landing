@@ -12,21 +12,22 @@ function Header() {
     "open" | "closing" | "closed"
   >("closed");
 
-  const headerLinksMobileClassName = `Header-Links-Mobile ${mobileMenuState}`;
   const handlerClick = () => {
+    console.log(mobileMenuState);
     if (mobileMenuState === "open") {
-      setMobileMenuState("closing");
       handlerClose();
     } else if (mobileMenuState === "closed") {
       setMobileMenuState("open");
     }
   };
   const handlerClose = () => {
+    if (mobileMenuState === "closed") return;
+    setMobileMenuState("closing");
     setTimeout(() => {
       setMobileMenuState("closed");
     }, 300);
   };
-  console.log(mobileMenuState);
+
   useEffect(() => {
     if (mobileMenuState === "open") {
       document.body.style.overflow = "hidden";
@@ -42,15 +43,32 @@ function Header() {
             <Logo text />
           </a>
         </div>
-        <div className="Header-Links">
-          <button className="Header-Links-Mobile-Btn" onClick={handlerClick}>
+        <div
+          className={
+            "Header-Links" +
+            (mobileMenuState === "open" ||
+            mobileMenuState === "closing" ||
+            mobileMenuState === "closed"
+              ? " " + mobileMenuState
+              : "")
+          }
+        >
+          <div className="Header-Links-container">
+            <a onClick={handlerClose} href="#about">
+              Nosotros
+            </a>
+            <a onClick={handlerClose} href="#pricing">
+              Planes
+            </a>
+            <a onClick={handlerClose} href="#contact">
+              Contacto
+            </a>
+          </div>
+        </div>
+        <div className="Header-Menu-Mobile">
+          <button onClick={handlerClick}>
             <HamburgerIcon />
           </button>
-          <div className={headerLinksMobileClassName}>
-            <a href="#about">Nosotros</a>
-            <a href="#pricing">Planes</a>
-            <a href="#contact">Contacto</a>
-          </div>
         </div>
       </div>
     </header>

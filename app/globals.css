@@ -74,3 +74,10 @@ body {
   :root {
   }
 }
+
+@media screen and (max-width: 768px) {
+  :root {
+    --padding-primary-x: 50px;
+    --padding-primary-y: 50px;
+  }
+}
