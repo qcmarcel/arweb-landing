@@ -38,7 +38,7 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  padding: calc(0.1rem * var(--scale));
+  padding: calc(0.2rem * var(--scale));
   background-color: var(--color-tertiary);
   border-radius: 10rem;
   width:calc(3.1875rem * 100%) * var(--scale);

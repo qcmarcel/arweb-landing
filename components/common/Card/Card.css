@@ -11,7 +11,10 @@
 }
 
 .Card-Button {
-  padding: calc(2.5625rem * var(--scale)) 0 0 calc(1.1rem * var(--scale));;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: calc(1.25rem * var(--scale));
 }
 
 .Card-info {
