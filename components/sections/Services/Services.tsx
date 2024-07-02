@@ -60,8 +60,7 @@ function ServicesSection() {
                 Nuestro equipo de expertos se asegurará de que tu{" "}
                 <b>e-commerce</b>
                 <br />
-                aparezca en los{" "}
-                <b>primeros resultados de los motores de búsqueda</b>.
+                aparezca en los <b>primeros resultados</b> de los <b> motores de búsqueda</b>.
               </span>
             </div>
           </Card>
@@ -128,8 +127,8 @@ function ServicesSection() {
                 Nuestro equipo de expertos se asegurará de que tu{" "}
                 <b>e-commerce</b>
                 <br />
-                aparezca en los{" "}
-                <b>primeros resultados de los motores de búsqueda</b>.
+                aparezca en los <b>primeros resultados</b> de los{" "}
+                <b>motores de búsqueda</b>.
               </span>
             </div>
           </Card>

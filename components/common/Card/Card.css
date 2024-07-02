@@ -5,7 +5,7 @@
   flex-shrink: 0;
   border-radius: calc(0.63rem * var(--scale));
   background: var(--Text-Color-P-W);
-  margin-bottom: calc(2.56rem * var(--scale)) ;
+  margin-bottom: calc(2.5rem * var(--scale)) ;
   word-break: keep-all;
   hyphens:none ;
 }
@@ -28,6 +28,7 @@
     line-height: calc(1.25rem * var(--scale));
     & b {
       font-size: calc(1.25rem * var(--scale));
+      font-style: normal;
       font-weight: 600;
     }
   }
@@ -44,14 +45,13 @@
 
 @media screen and (max-width: 1024px) {
  .Card-info{
-    margin: calc(1.1rem * var(--scale));
-  }
+
     .Card {
       width: 100%;
       height: auto;
     }
     .Card-Button {
-      padding: calc(1rem * var(--scale)) 0 0 calc(1.1rem * var(--scale));
+      padding: calc(1rem * var(--scale)) 0 0 calc(1rem * var(--scale));
       --scale: 0.8;
     }
     .Card-info {
