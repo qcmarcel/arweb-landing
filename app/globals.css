@@ -51,11 +51,13 @@ body {
   --text-color-tertiary: rgb(0, 168, 225);
   --text-color-primary-white: rgb(29, 36, 68);
 
-  --Color-NB: rgb(244, 246, 246);
-  --Text-Color-T: rgb(12, 28, 71);
-  --Text-Color-N: rgb(3, 6, 28);
-  --Text-Color-P: rgb(29, 36, 68);
-  --Text-Color-P-W: rgb(255, 255, 255);
+
+  --bg-color-primary: rgb(223, 229, 230);/*bg-secondary*/
+  --bg-color-navbar: rgb(244, 246, 246);
+  --Text-Color-T: rgb(12, 28, 71); /*title-color primary*/
+  --Text-Color-N: rgb(3, 6, 28); /* text-color-primary*/
+  --Text-Color-P: rgb(29, 36, 68);/*text-color-primary-white*/
+  --Text-Color-P-W: rgb(255, 255, 255);/*title-color-secondary*/
 
   --radius-primary: 0.38rem;
 

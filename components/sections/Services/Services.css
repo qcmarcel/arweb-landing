@@ -1,72 +1,125 @@
 .Services {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 66rem;
+  grid-template-areas: "derecha izquierda";
+  width: 100%;
+  height:calc(100vh *100%);
   background-color: var(--bg-secondary);
 }
 
+.Services-izq {
+  grid-area: izquierda;
+}
+
+.Services-der {
+  grid-area: derecha;
+}
+
+
+
 .Services-content {
   display: flex;
+  gap: 1rem;
   flex-direction: column;
+  padding: calc(12.875rem * var(--scale)) calc(10rem * var(--scale)) calc(2rem * var(--scale)) calc(6.25rem * var(--scale));
+    --padding-bottom: 2rem;
 }
 
 .Services-content h2 {
   color: var(--Text-Color-N);
-  font-size: 2.75rem;
+  font-size: calc(2.75rem * var(--scale));
   font-style: normal;
   font-weight: 600;
-  line-height: 3.3rem;
-  padding: 12.875rem 10rem 0 2.625rem;
+  line-height: calc(3.3rem * var(--scale));
 }
 
 .Services-content p {
   color: var(--Text-Color-P);
-  font-size: 1.5rem;
+  font-size: calc(1.5rem * var(--scale));
   font-style: normal;
   font-weight: 500;
   line-height: 1.8rem;
-  padding: 0.8rem 10rem 0 2.6rem;
+  padding-bottom: calc(var(--padding-bottom) * var(--scale));
 }
 
-
-
 .Services-image {
-  display: flex;
-  flex-direction: column;
-  padding: 14.44rem 50px 90px var(--padding-primary-x);
+  position: relative;
+  overflow: hidden;
+  padding: calc(14.44rem * var(--scale)) calc(3.125rem * var(--scale))
+    calc(6.1875rem * var(--scale)) var(--padding-primary-x);
 }
 
 .Services-image img {
-  width: 50rem;
-  height: 43.75rem;
+  width: 100%;
+  height: 100%;
   flex-shrink: 0;
 }
 
-.Services-image-triangles {
-  position: absolute;
-  z-index: 1;
-  height: 65vh;
-  width: 65vh;
-  right: 0;
-  top: 0;
+@media screen and (max-width: 1024px) {
+  .Services {
+    grid-template-columns: 1.1fr 1fr;
+  }
+  .Services-content {
+    padding-right: 60px;
+  }
+  .Services-content h2 {
+    --scale: 0.8;
+  }
+  .Services-content p {
+    --scale: 0.8;
+  }
+  .Services-content .Services-content-buttons a {
+    --scale: 0.8;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Services[data-orden="der-izq"] {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "derecha"
+      "izquierda";
+    }
+  }
+
+/* Cuando data-orden es "izquierda-derecha" */
+@media screen and (max-width: 768px) {
+  .Services[data-orden="izq-der"] {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "izquierda"
+      "derecha";
+  }
 }
 
-.Services-image-triangles #Services-image-triangles_1 {
-  width: 10rem;
-  height: 10rem;
-  background-color: var(--color-tertiary);
-  clip-path: polygon(100% 0, 0 0, 100% 100%);
-  position: absolute;
-  top: 0;
-  right: 0;
+@media screen and (max-width: 768px) {
+  .Services-image {
+    padding: var(--padding-primary-x) var(--padding-primary-y);
+    position: relative;
+    overflow:visible;
+  }
+
+  .Services-content {
+    padding: var(--padding-primary-x) var(--padding-primary-y);
+    & h2 {
+      padding-top: var(--padding-primary-x);
+      text-align: center;
+      --scale: 0.9;
+    }
+    & p {
+      text-align: center;
+    --scale: 0.9;
+    }
 }
 
-.Services-image-triangles #Services-image-triangles_2 {
-  width: 10rem;
-  height: 10rem;
-  background-color: var(--color-primary-dark);
-  clip-path: polygon(100% 0, 0 100%, 100% 100%);
-  position: absolute;
-  bottom: 0;
-  right: 0;
+@media screen and (max-width: 425px) {
+  .Services-content h2 {
+    --scale: 0.8;
+  }
+
+  .Services-content p {
+    --scale: 0.8;
+  }
+}
+
+@media screen and (max-width: 312px) {
 }

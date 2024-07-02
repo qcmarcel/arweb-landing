@@ -25,7 +25,7 @@ export default function RootLayout({
         <main>
           <div>
             <HeroSection />
-            {/* <ServicesSection /> */}
+            <ServicesSection />
             <PricingSection />
             {children}
           </div>

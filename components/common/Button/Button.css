@@ -32,3 +32,20 @@
   background-color: var(--color-primary-dark);
   color: var(--text-color-secondary);
 }
+
+.Button.Button-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: calc(0.1rem * var(--scale));
+  background-color: var(--color-tertiary);
+  border-radius: 10rem;
+  width:calc(3.1875rem * 100%) * var(--scale);
+  color: var(--color-primary-dark);
+}
+
+.Button.Button-icon:hover {
+  background-color: var(--color-primary-dark);
+  color: var(--text-color-secondary);
+}
