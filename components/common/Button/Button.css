@@ -41,7 +41,7 @@
   padding: calc(0.2rem * var(--scale));
   background-color: var(--color-tertiary);
   border-radius: 10rem;
-  width:calc(3.1875rem * 100%) * var(--scale);
+  width:calc(3.1875rem * 100% * var(--scale));
   color: var(--color-primary-dark);
 }
 

@@ -5,6 +5,7 @@ import { Header } from "@/components/common/Header";
 import { HeroSection } from "@/components/sections/Hero";
 import ServicesSection from "@/components/sections/Services/Services";
 import { PricingSection } from "@/components/sections/Pricing";
+import EticaSection from "@/components/sections/Etica/Etica";
 
 const lexend = Lexend({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
           <div>
             <HeroSection />
             <ServicesSection />
+            <EticaSection />
             <PricingSection />
             {children}
           </div>

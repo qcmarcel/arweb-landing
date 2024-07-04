@@ -1,26 +1,18 @@
 .Card {
   display: flex;
-  width: calc(47.9375rem * 100%);
-  height: auto;
-  flex-shrink: 0;
   border-radius: calc(0.63rem * var(--scale));
   background: var(--Text-Color-P-W);
-  margin-bottom: calc(2.5rem * var(--scale)) ;
   word-break: keep-all;
-  hyphens:none ;
+  hyphens: none;
 }
 
 .Card-Button {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: calc(1.25rem * var(--scale));
+  padding-left: calc(2rem * var(--scale));
 }
 
 .Card-info {
-
-  margin: calc(2rem* var(--scale));
-
+  margin: calc(2rem * var(--scale));
   & span {
     font-size: calc(1.1875rem * var(--scale));
     font-style: normal;
@@ -30,45 +22,86 @@
       font-size: calc(1.25rem * var(--scale));
       font-style: normal;
       font-weight: 600;
+      line-height: calc(1.25rem * var(--scale));
     }
   }
 }
 
 .Card-horizontal {
   flex-direction: row;
+  width: calc(47.9375rem * 100% * var(--scale));
+  height: auto;
+  margin-bottom: calc(2.5rem * var(--scale));
+  & .Card-Button {
+    align-items: center;
+    padding-left: calc(1.25rem * var(--scale));
+  }
 }
 
 .Card-vertical {
   flex-direction: column;
+  width: calc(23.83rem * var(--scale));
+  height: auto;
+  margin: calc(2rem * var(--scale));
+  & .Card-Button {
+    align-items: left;
+    padding-top: calc(1.25rem * var(--scale));
+  }
 }
 
-
 @media screen and (max-width: 1024px) {
- .Card-info{
-
+  .Card-info {
     .Card {
-      width: 100%;
-      height: auto;
+      --scale: 0.8;
     }
     .Card-Button {
-      padding: calc(1rem * var(--scale)) 0 0 calc(1rem * var(--scale));
-      --scale: 0.8;
+      padding: calc(1rem * var(--scale))
     }
     .Card-info {
       margin: calc(1rem * var(--scale));
       --scale: 0.8;
     }
- }
+  }
+  .Card-vertical {
+    width: calc(17rem * Var(--scale));
+  }
 }
 
 @media screen and (max-width: 768px) {
-
+  .Card-info {
+    .Card {
+      --scale: 0.9;
+    }
+    .Card-Button {
+      --scale: 0.9;
+    }
+    .Card-info {
+      --scale: 0.9;
+    }
+  }
+  .Card-vertical {
+    width: calc(100% * var(--scale));
+  }
 }
 
 @media screen and (max-width: 425px) {
-
+  .Card-info {
+    .Card {
+      --scale: 0.8;
+    }
+    .Card-Button {
+      --scale: 0.8;
+    }
+    .Card-info {
+      --scale: 0.8;
+    }
+  }
+  .Card-vertical {
+    width: calc(100% * var(--scale));
+  }
 }
-
-@media screen and (max-width: 312px) {
-
+@media screen and (max-width: 320px) {
+  .Card-vertical {
+    width: calc(100% * var(--scale));
+  }
 }
