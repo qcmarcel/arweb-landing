@@ -3,9 +3,9 @@ import { Lexend } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/common/Header";
 import { HeroSection } from "@/components/sections/Hero";
-import ServicesSection from "@/components/sections/Services/Services";
 import { PricingSection } from "@/components/sections/Pricing";
-import EticaSection from "@/components/sections/Etica/Etica";
+
+import { AdvertisingSection, EthicsSection, ServicesSection } from "@/components";
 
 const lexend = Lexend({ subsets: ["latin"] });
 
@@ -27,8 +27,9 @@ export default function RootLayout({
           <div>
             <HeroSection />
             <ServicesSection />
-            <EticaSection />
+            <EthicsSection />
             <PricingSection />
+            <AdvertisingSection />
             {children}
           </div>
         </main>

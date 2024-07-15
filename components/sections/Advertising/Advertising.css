@@ -1,4 +1,4 @@
-.Services {
+.Advertising {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "derecha izquierda";
@@ -8,22 +8,21 @@
   overflow: hidden;
 }
 
-.Services-izq {
+.Advertising-izq {
   grid-area: izquierda;
 }
 
-.Services-der {
+.Advertising-der {
   grid-area: derecha;
 }
 
-
-
-.Services-content {
+.Advertising-content {
   display: flex;
   gap: 1rem;
   flex-direction: column;
   padding: calc(12.875rem * var(--scale)) calc(7rem * var(--scale)) calc(2rem * var(--scale)) calc(6.25rem * var(--scale));
-    --padding-bottom: 2rem;
+  --padding-bottom: 2rem;
+
   & h2 {
     color: var(--Text-Color-N);
     font-size: calc(2.75rem * var(--scale));
@@ -42,45 +41,46 @@
   }
 }
 
-.Services-image {
+.Advertising-image {
   position: relative;
   overflow: hidden;
   padding: calc(14.44rem * var(--scale)) calc(3.125rem * var(--scale))
     calc(6.1875rem * var(--scale)) var(--padding-primary-x);
+
   & img {
     width: 100%;
     height: 100%;
-
- }
+  }
 }
 
 
 @media screen and (max-width: 1024px) {
-  .Services {
+  .Advertising {
     grid-template-columns: 1.1fr 1fr;
   }
-  .Services-content {
+  .Advertising-content {
     padding-right: 60px;
   }
-  .Services-content h2 {
+  .Advertising-content h2 {
     --scale: 0.8;
   }
-  .Services-content p {
+  .Advertising-content p {
     --scale: 0.8;
   }
 }
+
 @media screen and (max-width: 768px) {
-  .Services[data-orden="der-izq"] {
+  .Advertising[data-orden="der-izq"] {
     grid-template-columns: 1fr;
     grid-template-areas:
       "derecha"
       "izquierda";
-    }
   }
+}
 
 /* Cuando data-orden es "izquierda-derecha" */
 @media screen and (max-width: 768px) {
-  .Services[data-orden="izq-der"] {
+  .Advertising[data-orden="izq-der"] {
     grid-template-columns: 1fr;
     grid-template-areas:
       "izquierda"
@@ -89,13 +89,13 @@
 }
 
 @media screen and (max-width: 768px) {
-  .Services-image {
+  .Advertising-image {
     padding: var(--padding-primary-x) 1rem;
     position: relative;
     overflow:visible;
   }
 
-  .Services-content {
+  .Advertising-content {
     padding: var(--padding-primary-x) 1.5rem;
     & h2 {
       padding-top: var(--padding-primary-x);
@@ -106,14 +106,15 @@
       text-align: center;
     --scale: 0.9;
     }
+  }
 }
 
 @media screen and (max-width: 425px) {
-  .Services-content h2 {
+  .Advertising-content h2 {
     --scale: 0.8;
   }
 
-  .Services-content p {
+  .Advertising-content p {
     --scale: 0.8;
   }
 }

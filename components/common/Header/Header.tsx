@@ -1,6 +1,5 @@
 "use client";
 import "./Header.css";
-import Image from "next/image";
 import { Logo } from "../Logo";
 import { HamburgerIcon } from "@/components/icons";
 import { useState, useEffect } from "react";

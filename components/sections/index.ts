@@ -1,2 +1,5 @@
-export * from './Hero';
-export * from './Services';
+export * from "./Advertising";
+export * from "./Ethics";
+export * from "./Hero";
+export * from "./Pricing";
+export * from "./Services";

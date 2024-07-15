@@ -1,4 +1,4 @@
-import "./Etica.css";
+import "./Ethics.css";
 import { Inter } from "next/font/google";
 import { Card } from "@/components/common/Card";
 import { Button } from "@/components/common/Button";
@@ -7,15 +7,15 @@ import { ExcellenceIcon, ProductivityIcon, ServicesIcon, TrustIcon } from "@/com
 
 const inter = Inter({ subsets: ["latin"] });
 
-function EticaSection() {
+export function EthicsSection() {
   return (
-    <section className="Etica" data-orden="der-izq">
-      <div className="Etica-content">
+    <section className="Ethics" data-orden="der-izq">
+      <div className="Ethics-content">
         <h2>Ética Corporativa</h2>
         <p className={inter.className}>
           Nuestros valores son el corazón de todo lo que hacemos
         </p>
-        <div className="Etica-content-card">
+        <div className="Ethics-content-card">
           <Card cardType="vertical">
             <div className="Card-Button">
               <Button buttonType="icon">
@@ -89,5 +89,3 @@ function EticaSection() {
     </section>
   );
 }
-
-export default EticaSection;

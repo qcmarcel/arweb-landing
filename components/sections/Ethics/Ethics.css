@@ -1,13 +1,14 @@
-.Etica {
+.Ethics {
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
   height: calc(100vh * 100%);
   background-color: var(--bg-secondary);
   padding: calc(5.19rem * var(--scale)) calc(1rem * var(--scale)) calc(9rem * var(--scale)) calc(1rem * var(--scale));
+  overflow: hidden;
 }
 
-.Etica-content {
+.Ethics-content {
   display: flex;
   width: 100%;
   gap: calc(1rem * var(--scale));
@@ -32,7 +33,7 @@
   }
 }
 
-.Etica-content-card {
+.Ethics-content-card {
   display: flex;
   width: auto;
   flex-direction: row;
@@ -42,10 +43,11 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .Etica {
+  .Ethics {
     grid-template-columns: 1fr;
   }
-  .Etica-content {
+  .E
+thics-content {
     & h2 {
       text-align: center;
       --scale: 0.8;
@@ -58,10 +60,11 @@
 }
 
 @media screen and (max-width: 768px) {
-  .Etica {
+  .Ethics {
     grid-template-columns: 1fr;
   }
-  .Etica-content {
+  .E
+thics-content {
     & h2 {
       text-align: center;
       --scale: 0.9;
@@ -74,11 +77,13 @@
 }
 
 @media screen and (max-width: 425px) {
-  .Etica-content h2 {
+  .E
+thics-content h2 {
     --scale: 0.8;
   }
 
-  .Etica-content p {
+  .E
+thics-content p {
     --scale: 0.8;
   }
 }
