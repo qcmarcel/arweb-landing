@@ -1,8 +1,6 @@
 import "./Ethics.css";
 import { Inter } from "next/font/google";
-import { Card } from "@/components/common/Card";
-import { Button } from "@/components/common/Button";
-import { ExcellenceIcon, ProductivityIcon, ServicesIcon, TrustIcon } from "@/components/icons";
+import { Button, Card, ExcellenceIcon, ProductivityIcon, ServicesIcon, TrustIcon } from "@/components";
 
 
 const inter = Inter({ subsets: ["latin"] });

@@ -8,4 +8,5 @@ export * from "./ProductIcon";
 export * from "./ProductivityIcon";
 export * from "./ServicesIcon";
 export * from "./StoreIcon";
+export * from "./TechnicIcon";
 export * from "./TrustIcon";
