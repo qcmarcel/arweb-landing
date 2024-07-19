@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "derecha izquierda";
   width: 100%;
-  height:calc(100vh *100%);
+  height: calc(100vh * 100%);
   background-color: var(--bg-secondary);
   overflow: hidden;
 }
@@ -20,7 +20,8 @@
   display: flex;
   gap: 1rem;
   flex-direction: column;
-  padding: calc(12.875rem * var(--scale)) calc(7rem * var(--scale)) calc(2rem * var(--scale)) calc(6.25rem * var(--scale));
+  padding: calc(12.875rem * var(--scale)) calc(7rem * var(--scale))
+    calc(2rem * var(--scale)) calc(6.25rem * var(--scale));
   --padding-bottom: 2rem;
 
   & h2 {
@@ -53,11 +54,15 @@
   }
 }
 
-
 @media screen and (max-width: 1024px) {
-  .TechnicalService {
+  .TechnicalService[data-orden="der-izq"] {
     grid-template-columns: 1.1fr 1fr;
   }
+
+  .TechnicalService[data-orden="izq-der"] {
+    grid-template-columns: 1fr 1.1fr;
+  }
+
   .TechnicalService-content {
     padding-right: 60px;
   }
@@ -70,29 +75,24 @@
 }
 
 @media screen and (max-width: 768px) {
-  .TechnicalService[data-orden="der-izq"] {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "derecha"
-      "izquierda";
-  }
-}
-
-/* Cuando data-orden es "izquierda-derecha" */
-@media screen and (max-width: 768px) {
   .TechnicalService[data-orden="izq-der"] {
     grid-template-columns: 1fr;
     grid-template-areas:
       "izquierda"
       "derecha";
   }
-}
 
-@media screen and (max-width: 768px) {
+  .TechnicalService[data-orden="der-izq"] {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "derecha"
+      "izquierda";
+  }
+
   .TechnicalService-image {
     padding: var(--padding-primary-x) 1rem;
     position: relative;
-    overflow:visible;
+    overflow: visible;
   }
 
   .TechnicalService-content {
@@ -104,7 +104,7 @@
     }
     & p {
       text-align: center;
-    --scale: 0.9;
+      --scale: 0.9;
     }
   }
 }

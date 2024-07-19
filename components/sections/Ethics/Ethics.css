@@ -46,8 +46,7 @@
   .Ethics {
     grid-template-columns: 1fr;
   }
-  .E
-thics-content {
+  .Ethics-content {
     & h2 {
       text-align: center;
       --scale: 0.8;
@@ -63,8 +62,7 @@ thics-content {
   .Ethics {
     grid-template-columns: 1fr;
   }
-  .E
-thics-content {
+  .Ethics-content {
     & h2 {
       text-align: center;
       --scale: 0.9;
@@ -77,13 +75,11 @@ thics-content {
 }
 
 @media screen and (max-width: 425px) {
-  .E
-thics-content h2 {
+  .Ethics-content h2 {
     --scale: 0.8;
   }
 
-  .E
-thics-content p {
+  .Ethics-content p {
     --scale: 0.8;
   }
 }
