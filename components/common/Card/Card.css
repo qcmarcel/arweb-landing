@@ -44,7 +44,7 @@
   height: auto;
   margin: calc(2rem * var(--scale));
   & .Card-Button {
-    align-items: left;
+    align-items: start;
     padding-top: calc(1.25rem * var(--scale));
   }
 }

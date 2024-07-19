@@ -1,121 +1,128 @@
 .Services {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "derecha izquierda";
-  width: 100%;
-  height:calc(100vh *100%);
-  background-color: var(--bg-secondary);
-  overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "derecha izquierda";
+    width: 100%;
+    height: calc(100vh * 100%);
+    background-color: var(--bg-secondary);
+    overflow: hidden;
 }
 
 .Services-izq {
-  grid-area: izquierda;
+    grid-area: izquierda;
 }
 
 .Services-der {
-  grid-area: derecha;
+    grid-area: derecha;
 }
-
 
 
 .Services-content {
-  display: flex;
-  gap: 1rem;
-  flex-direction: column;
-  padding: calc(12.875rem * var(--scale)) calc(7rem * var(--scale)) calc(2rem * var(--scale)) calc(6.25rem * var(--scale));
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    padding: calc(12.875rem * var(--scale)) calc(7rem * var(--scale)) calc(2rem * var(--scale)) calc(6.25rem * var(--scale));
     --padding-bottom: 2rem;
-  & h2 {
-    color: var(--Text-Color-N);
-    font-size: calc(2.75rem * var(--scale));
-    font-style: normal;
-    font-weight: 600;
-    line-height: calc(3.3rem * var(--scale));
-  }
 
-  & p {
-    color: var(--Text-Color-P);
-    font-size: calc(1.5rem * var(--scale));
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.8rem;
-    padding-bottom: calc(var(--padding-bottom) * var(--scale));
-  }
+    & h2 {
+        color: var(--Text-Color-N);
+        font-size: calc(2.75rem * var(--scale));
+        font-style: normal;
+        font-weight: 600;
+        line-height: calc(3.3rem * var(--scale));
+    }
+
+    & p {
+        color: var(--Text-Color-P);
+        font-size: calc(1.5rem * var(--scale));
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.8rem;
+        padding-bottom: calc(var(--padding-bottom) * var(--scale));
+    }
 }
 
 .Services-image {
-  position: relative;
-  overflow: hidden;
-  padding: calc(14.44rem * var(--scale)) calc(3.125rem * var(--scale))
-    calc(6.1875rem * var(--scale)) var(--padding-primary-x);
-  & img {
-    width: 100%;
-    height: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: calc(14.44rem * var(--scale)) calc(3.125rem * var(--scale)) calc(6.1875rem * var(--scale)) var(--padding-primary-x);
 
- }
+    & img {
+        width: 100%;
+        height: 100%;
+
+    }
 }
 
 
 @media screen and (max-width: 1024px) {
-  .Services {
-    grid-template-columns: 1.1fr 1fr;
-  }
-  .Services-content {
-    padding-right: 60px;
-  }
-  .Services-content h2 {
-    --scale: 0.8;
-  }
-  .Services-content p {
-    --scale: 0.8;
-  }
+    .Services {
+        grid-template-columns: 1.1fr 1fr;
+    }
+
+    .Services-content {
+        padding-right: 60px;
+    }
+
+    .Services-content h2 {
+        --scale: 0.8;
+    }
+
+    .Services-content p {
+        --scale: 0.8;
+    }
 }
+
 @media screen and (max-width: 768px) {
-  .Services[data-orden="der-izq"] {
-    grid-template-columns: 1fr;
-    grid-template-areas:
+    .Services[data-orden="der-izq"] {
+        grid-template-columns: 1fr;
+        grid-template-areas:
       "derecha"
       "izquierda";
     }
-  }
+}
 
 /* Cuando data-orden es "izquierda-derecha" */
 @media screen and (max-width: 768px) {
-  .Services[data-orden="izq-der"] {
-    grid-template-columns: 1fr;
-    grid-template-areas:
+    .Services[data-orden="izq-der"] {
+        grid-template-columns: 1fr;
+        grid-template-areas:
       "izquierda"
       "derecha";
-  }
+    }
 }
 
 @media screen and (max-width: 768px) {
-  .Services-image {
-    padding: var(--padding-primary-x) 1rem;
-    position: relative;
-    overflow:visible;
-  }
-
-  .Services-content {
-    padding: var(--padding-primary-x) 1.5rem;
-    & h2 {
-      padding-top: var(--padding-primary-x);
-      text-align: center;
-      --scale: 0.9;
+    .Services-image {
+        padding: var(--padding-primary-x) 1rem;
+        position: relative;
+        overflow: visible;
     }
-    & p {
-      text-align: center;
-    --scale: 0.9;
+
+    .Services-content {
+        padding: var(--padding-primary-x) 1.5rem;
+
+        & h2 {
+            padding-top: var(--padding-primary-x);
+            text-align: center;
+            --scale: 0.9;
+        }
+
+        & p {
+            text-align: center;
+            --scale: 0.9;
+        }
     }
 }
 
 @media screen and (max-width: 425px) {
-  .Services-content h2 {
-    --scale: 0.8;
-  }
+    .Services-content h2 {
+        --scale: 0.8;
+    }
 
-  .Services-content p {
-    --scale: 0.8;
-  }
+    .Services-content p {
+        --scale: 0.8;
+    }
 }
 
 @media screen and (max-width: 312px) {

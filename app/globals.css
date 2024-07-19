@@ -7,18 +7,6 @@
   scrollbar-color: var(--color-primary) var(--bg-secondary);
 }
 
-p,
-span,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a {
-  font-style: var(--text-color);
-}
-
 body {
   background-color: var(--bg-secondary);
 }
@@ -40,7 +28,6 @@ body {
   --bg-tertiary: var(--color-primary-dark);
   --bg-quaternary: var(--color-tertiary-white);
 
-  --padding-primary-x: 6.25rem;
   --padding-primary-y: 6rem;
 
   --title-color-primary: rgb(12, 28, 71);
@@ -58,21 +45,30 @@ body {
   --Text-Color-N: rgb(3, 6, 28); /* text-color-primary*/
   --Text-Color-P: rgb(29, 36, 68);/*text-color-primary-white*/
   --Text-Color-P-W: rgb(255, 255, 255);/*title-color-secondary*/
-
-  --radius-primary: 0.38rem;
+  --Text-Color: rgb(3, 6, 28);
 
   --box-shadow-primary: 0 -4px 4px rgba(0, 0, 0, 0.51);
   --drop-shadow-primary: 0 0 4px 0 rgba(0, 0, 0, 0.51);
 
   --padding-primary-x: 6rem;
-  --padding-primary-y: 6rem;
-
   --radius-primary: 6px;
 
   --blur-primary: 4px;
 }
 
-@media screen and (color-scheme: dark) {
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  color: var(--Text-Color, #03061C);
+}
+
+@media screen and (prefers-color-scheme: dark) {
   :root {
   }
 }
