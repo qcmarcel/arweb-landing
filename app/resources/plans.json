@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Starter Pack",
+    "desc": "Ideal para corredores y promo vendedores",
+    "amount": 0,
+    "features": ["ecommerce"]
+  },
+  {
+    "name": "Branding Essentials",
+    "desc": "Ideal para corredores y promo vendedores",
+    "amount": 150.0,
+    "before": 180.0,
+    "features": ["ecommerce", "seo"]
+  },
+  {
+    "name": "Premium Branding",
+    "desc": "Ideal para corredores y promo vendedores",
+    "period": "mes",
+    "features": ["ecommerce", "seo", "socialmedia"]
+  }
+]
+

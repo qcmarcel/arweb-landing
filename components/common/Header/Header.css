@@ -122,13 +122,13 @@
       height: calc(100vh - 12vh);
     }
     100% {
-      height: 0vh;
+      height: 0;
     }
   }
 
   @keyframes Header-Mobile-open {
     0% {
-      height: 0vh;
+      height: 0;
       overflow: hidden;
     }
 

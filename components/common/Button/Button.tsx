@@ -1,4 +1,5 @@
 import "./Button.css";
+import React from "react";
 interface Props extends Readonly<React.ButtonHTMLAttributes<HTMLButtonElement>> {
   readonly buttonType: "solid" | "outline" | "link" | "icon";
   readonly children: React.ReactNode;

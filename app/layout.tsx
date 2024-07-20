@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
-import { Lexend } from "next/font/google";
+import type {Metadata} from "next";
+import {Lexend} from "next/font/google";
 import "./globals.css";
-import { Header } from "@/components/common/Header";
-import { HeroSection } from "@/components/sections/Hero";
-import { PricingSection } from "@/components/sections/Pricing";
-
-import { AdvertisingSection, EthicsSection, ServicesSection, TechnicalServiceSection } from "@/components";
+import {Header} from "@/components/common/Header";
+import {HeroSection} from "@/components/views/Hero";
+import {PricingSection} from "@/components/views/Pricing";
+import {AdvertisingSection, EthicsSection, ServicesSection, TechnicalServiceSection} from "@/components";
+import React from "react";
 
 const lexend = Lexend({ subsets: ["latin"] });
 

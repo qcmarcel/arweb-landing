@@ -54,6 +54,11 @@ body {
   --radius-primary: 6px;
 
   --blur-primary: 4px;
+
+  --Border-Gray: rgb(211, 211, 211);
+  --subtitle-font-size: x-large;
+  --text-disabled: rgb(217, 217, 217);
+  --success-color: rgb(133, 208, 7);
 }
 
 p,

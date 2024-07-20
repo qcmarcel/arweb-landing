@@ -2,7 +2,7 @@
 import "./Header.css";
 import { Logo } from "../Logo";
 import { HamburgerIcon } from "@/components/icons";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 type MouseEventHandler<T> = React.MouseEventHandler<T>;
 
