@@ -1,8 +1,8 @@
 import "./Card.css";
-import React from "react";
-interface Props extends Readonly<React.HTMLAttributes<HTMLDivElement>> {
+import {HTMLAttributes, ReactNode} from "react";
+interface Props extends Readonly<HTMLAttributes<HTMLDivElement>> {
   readonly cardType: "vertical" | "horizontal";
-  readonly children: React.ReactNode;
+  readonly children: ReactNode;
   readonly className?: string;
 }
 

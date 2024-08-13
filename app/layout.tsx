@@ -5,7 +5,7 @@ import {Header} from "@/components/common/Header";
 import {HeroSection} from "@/components/views/Hero";
 import {PricingSection} from "@/components/views/Pricing";
 import {AdvertisingSection, EthicsSection, ServicesSection, TechnicalServiceSection} from "@/components";
-import React from "react";
+import {ReactNode} from "react";
 
 const lexend = Lexend({ subsets: ["latin"] });
 
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html lang="en">

@@ -1,8 +1,7 @@
 "use client";
 import "./Pricing.css";
 import {Button, Card} from "@/components";
-import data from "@/app/resources";
-import React from "react";
+import {Features, Plans} from "@/resources";
 
 interface Feature {
     [key: string]: {
@@ -20,8 +19,8 @@ interface Plan {
 }
 
 function Pricing() {
-    const planFeatures: Feature = data.Features;
-    const plans: Plan[] = data.Plans;
+    const planFeatures: Feature = Features;
+    const plans: Plan[] = Plans;
     return (
         <section id="pricing" className="Pricing">
             <div className="Pricing-Header">
