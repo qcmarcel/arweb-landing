@@ -6,7 +6,7 @@ import "./TechnicalService.css";
 const inter = Inter({ subsets: ["latin"] });
 const data = {
   img: {
-    Href: "/img/TechnicalService.png",
+    Href: "img/TechnicalService.png",
     alt: "TechnicalService",
   },
 };
